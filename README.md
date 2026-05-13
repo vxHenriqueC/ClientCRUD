@@ -2,7 +2,7 @@
 
 Sistema CRUD de gerenciamento de clientes desenvolvido em Python com SQLite.
 
-##  Funcionalidades
+## Funcionalidades
 
 - Cadastro de clientes
 - Listagem de clientes
@@ -10,12 +10,12 @@ Sistema CRUD de gerenciamento de clientes desenvolvido em Python com SQLite.
 - Atualização de dados
 - Exclusão de clientes
 
-##  Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Python
 - SQLite
 
-##  Estrutura do projeto
+## Estrutura do projeto
 
 ```bash
 ClientCRUD/
@@ -24,25 +24,41 @@ ClientCRUD/
 ├── clients.py
 ├── db.py
 └── clientflow.db
+```
 
+## Como executar o projeto
 
- Como executar o projeto
-1. Clone o repositório
+### 1. Clone o repositório
+
+```bash
 git clone https://github.com/seuusuario/clientcrud.git
-2. Acesse a pasta do projeto
+```
+
+### 2. Acesse a pasta do projeto
+
+```bash
 cd clientcrud
-3. Execute o projeto
+```
+
+### 3. Execute o projeto
+
+```bash
 python main.py
- Banco de dados
+```
+
+## Banco de dados
 
 O banco de dados é criado automaticamente utilizando SQLite.
 
 Arquivo gerado automaticamente:
 
+```bash
 clientflow.db
+```
 
 Tabela criada:
 
+```sql
 CREATE TABLE clients (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
@@ -51,18 +67,43 @@ CREATE TABLE clients (
     company TEXT,
     registration_date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
- Operações disponíveis
-Criar cliente
+```
+
+## Operações disponíveis
+
+### Criar cliente
+
+```text
 1 - Create client
-Listar clientes
+```
+
+### Listar clientes
+
+```text
 2 - List clients
-Buscar cliente
+```
+
+### Buscar cliente
+
+```text
 3 - Search client
-Atualizar cliente
+```
+
+### Atualizar cliente
+
+```text
 4 - Update client
-Deletar cliente
+```
+
+### Deletar cliente
+
+```text
 5 - Delete client
- Exemplo de execução
+```
+
+## Exemplo de execução
+
+```text
 === CLIENTFLOW ===
 1 - Create client
 2 - List clients
@@ -70,16 +111,19 @@ Deletar cliente
 4 - Update client
 5 - Delete client
 0 - Exit
- Objetivo do projeto
+```
+
+## Objetivo do projeto
 
 Projeto desenvolvido com foco em aprendizado e prática de:
 
-CRUD
-Integração Python + Banco de Dados
-SQLite
-SQL
-Estruturação de aplicações backend
-Manipulação de dados
- Autor
+- CRUD
+- Integração Python + Banco de Dados
+- SQLite
+- SQL
+- Estruturação de aplicações backend
+- Manipulação de dados
+
+## Autor
 
 Henrique Conton Chiaretti
